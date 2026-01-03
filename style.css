@@ -130,6 +130,18 @@ h4 {
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
 }
 
+/* Background Canvas */
+#ai-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.4;
+}
+
 /* Buttons */
 .btn {
     display: inline-flex;
@@ -288,6 +300,21 @@ h4 {
 .pain-card:hover,
 .persona-card:hover {
     transform: translateY(-5px);
+}
+
+.pain-points-footer {
+    text-align: center;
+    margin-top: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+
+.pain-points-footer p {
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+    color: var(--text-muted);
 }
 
 .persona-icon-img {
@@ -508,7 +535,7 @@ footer {
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
 }
 
-.modal-overlay.active {
+.modal-overlay.show-modal {
     display: flex;
 }
 
@@ -575,9 +602,9 @@ footer {
     }
 }
 
-.whatsapp-icon-img {
-    width: 35px;
-    height: 35px;
+.floating-whatsapp i {
+    font-size: 35px;
+    color: white;
 }
 
 /* Responsive Adjustments */
