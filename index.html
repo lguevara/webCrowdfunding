@@ -53,7 +53,7 @@
     <!-- Pain Points Section (Replaces Ecosystem) -->
     <section class="section">
         <div class="container">
-            <h2 class="text-gradient" style="text-align: center; margin-bottom: 50px; font-size: 2.5rem; color: #000;">
+            <h2 class="section-title text-gradient">
                 ¿Acaso te identificas con esto?
             </h2>
 
@@ -100,9 +100,9 @@
     </section>
 
     <!-- User Personas Section (Replaces Crowdfunding Definition) -->
-    <section class="section" style="background: rgba(255,255,255,0.8);">
+    <section class="section section-light">
         <div class="container">
-            <h2 class="text-gradient" style="text-align: center; margin-bottom: 50px; font-size: 2.5rem; color: #000;">
+            <h2 class="section-title text-gradient">
                 Justo para lo que necesitas
             </h2>
 
@@ -151,7 +151,7 @@
                 </div>
             </div>
 
-            <div style="text-align: center; margin-top: 40px;">
+            <div class="section-actions">
                 <button class="btn btn-green-gradient" id="personas-video-btn">
                     Click aquí para ver el video gratis <i class="fa-solid fa-play"></i>
                 </button>
@@ -162,21 +162,19 @@
     <!-- Featured Video Section (Replaces Page 5/Why Us) -->
     <section class="section">
         <div class="container">
-            <h2 class="text-gradient" style="text-align: center; margin-bottom: 20px; font-size: 2rem; color: #000;">
+            <h2 class="section-title text-gradient">
                 ¿Quieres transformar tu tiempo, conocimiento y tecnología en ingresos pasivos reales?
             </h2>
-            <p
-                style="margin-bottom: 40px; font-size: 1.1rem; color: var(--text-muted); line-height: 1.6; text-align: center;">
+            <p class="section-subtitle">
                 En este vídeo te explicamos cómo. Descubre el nuevo paradigma de descentralización y conciencia
                 financiera que te guiará hacia tu pensión digital. ¡Empieza a construir tu futuro hoy mismo!
             </p>
 
-            <div style="display: flex; justify-content: center; margin-top: 20px;">
-                <iframe width="640" height="360" src="https://www.youtube.com/embed/gTdBEJxtRXQ?rel=0"
-                    title="Global Wallet Video" frameborder="0"
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/gTdBEJxtRXQ?rel=0" title="Global Wallet Video"
+                    frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen
-                    style="max-width: 100%; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); border: 4px solid #fff;">
+                    allowfullscreen>
                 </iframe>
             </div>
         </div>
@@ -185,19 +183,16 @@
     <!-- Flagship Program Section (Replaces Programs Accordion) -->
     <section class="section" id="programs">
         <div class="container">
-            <h2 class="text-gradient"
-                style="text-align: center; margin-bottom: 30px; font-size: 1.8rem; text-transform: uppercase;">
+            <h2 class="section-title text-gradient uppercase">
                 Programa Bandera de la Empresa – 5 Programas en Uno
             </h2>
 
-            <div style="display: flex; justify-content: center; margin-bottom: 30px;">
-                <img src="./recursos/imagen_ukaleidoscope.jpg" alt="Programa U-Kaleidoscopio"
-                    style="max-width: 100%; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+            <div class="image-center-wrapper">
+                <img src="./recursos/imagen_ukaleidoscope.jpg" alt="Programa U-Kaleidoscopio" class="responsive-banner">
             </div>
 
-            <div
-                style="max-width: 900px; margin: 0 auto; text-align: center; font-size: 1.1rem; line-height: 1.6; color: var(--text-color);">
-                <p style="margin-bottom: 15px;">
+            <div class="section-content-narrow">
+                <p>
                     Si empiezas con este programa (membresía) obtendrás tu <strong>BioLink Personalizado</strong>.
                 </p>
                 <p>
@@ -210,20 +205,19 @@
     </section>
 
     <!-- Vision & Mission Section + Video -->
-    <section class="section" style="background: linear-gradient(to bottom, #fff, #f8fafc);">
+    <section class="section section-gradient-bg">
         <div class="container">
-            <h2 class="text-gradient" style="text-align: center; margin-bottom: 40px; font-size: 2rem;">
+            <h2 class="section-title text-gradient">
                 Nuestra Visión y Misión
             </h2>
 
-            <div class="vision-mission-grid"
-                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-bottom: 50px;">
+            <div class="vision-mission-grid">
                 <!-- Vision -->
-                <div class="glass" style="padding: 30px; border-radius: 20px;">
-                    <h3 style="color: var(--primary-color); margin-bottom: 15px; font-size: 1.5rem;">
+                <div class="glass vision-card">
+                    <h3>
                         <i class="fa-regular fa-eye"></i> Nuestra Visión
                     </h3>
-                    <p style="color: var(--text-color); line-height: 1.7;">
+                    <p>
                         Nuestra Visión en Magic Lime es innovar en el mundo de las finanzas, creando un ecosistema de
                         crowdfunding descentralizado basado en USDT que trasciende fronteras. Nos esforzamos por llevar
                         la igualdad económica a todos los países y empoderar a las personas en cada rincón del planeta,
@@ -232,11 +226,11 @@
                 </div>
 
                 <!-- Mission -->
-                <div class="glass" style="padding: 30px; border-radius: 20px;">
-                    <h3 style="color: var(--secondary-color); margin-bottom: 15px; font-size: 1.5rem;">
+                <div class="glass mission-card">
+                    <h3>
                         <i class="fa-solid fa-rocket"></i> Nuestra Misión
                     </h3>
-                    <p style="color: var(--text-color); line-height: 1.7;">
+                    <p>
                         Nuestra Misión es simplificar el crowdfunding global, aprovechando las criptomonedas para
                         ofrecer soluciones financieras rápidas, económicas y accesibles para todos. Proporcionamos
                         herramientas intuitivas para enviar, recibir y administrar fondos, fomentando la libertad
@@ -245,13 +239,11 @@
                 </div>
             </div>
 
-            <!-- Second Video Player (Same Style) -->
-            <div style="display: flex; justify-content: center; margin-top: 20px;">
-                <iframe width="640" height="360" src="https://www.youtube.com/embed/bQyswHZwDb8?start=1277&rel=0"
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/bQyswHZwDb8?start=1277&rel=0"
                     title="Vision and Mission Video" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen
-                    style="max-width: 100%; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); border: 4px solid #fff;">
+                    allowfullscreen>
                 </iframe>
             </div>
         </div>
@@ -260,30 +252,28 @@
     <!-- Simple System Section + Vimeo Video -->
     <section class="section">
         <div class="container">
-            <h2 class="text-gradient" style="text-align: center; margin-bottom: 20px; font-size: 2rem;">
+            <h2 class="section-title text-gradient">
                 Sistema simple
             </h2>
-            <p
-                style="margin-bottom: 40px; font-size: 1.1rem; color: var(--text-color); line-height: 1.6; text-align: center; max-width: 900px; margin-left: auto; margin-right: auto;">
+            <p class="section-subtitle">
                 Tenemos el sistema simple que te va a generar ingresos cada 24 horas. Imaginate que con registrar 2
                 personas puedes hacer tu comunidad y recibir cada 24 horas dinero directo a tu cuenta por sus
                 beneficios.
             </p>
 
-            <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
-                <iframe src="https://player.vimeo.com/video/1150445921?title=0&byline=0&portrait=0" width="640"
-                    height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
-                    style="max-width: 100%; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); border: 4px solid #fff;">
-                </iframe>
+            <div class="video-center-group">
+                <div class="video-container">
+                    <iframe src="https://player.vimeo.com/video/1150445921?title=0&byline=0&portrait=0" frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
+                    </iframe>
+                </div>
 
-                <div style="margin-top: 40px; text-align: center;">
-                    <h3 class="text-gradient"
-                        style="font-size: 1.4rem; margin-bottom: 20px; text-transform: uppercase; line-height: 1.4;">
+                <div class="cta-banner">
+                    <h3 class="cta-text text-gradient">
                         ¿Quieres registrarte? Pulsa en el botón y solicita información.
                     </h3>
-                    <a href="#contact" class="btn btn-primary"
-                        style="font-size: 1.2rem; padding: 15px 40px; border-radius: 50px; box-shadow: 0 5px 20px rgba(50, 205, 50, 0.4);">
-                        Información aquí <i class="fa-solid fa-arrow-down" style="margin-left: 10px;"></i>
+                    <a href="#contact" class="btn btn-primary btn-large">
+                        Información aquí <i class="fa-solid fa-arrow-down"></i>
                     </a>
                 </div>
             </div>
@@ -293,62 +283,57 @@
     <!-- Ecosystem Section + Video -->
     <section class="section">
         <div class="container">
-            <h2 class="text-gradient" style="text-align: center; margin-bottom: 20px; font-size: 2rem;">
+            <h2 class="section-title text-gradient">
                 Nuestro ecosistema
             </h2>
-            <p
-                style="margin-bottom: 40px; font-size: 1.1rem; color: var(--text-color); line-height: 1.6; text-align: center; max-width: 900px; margin-left: auto; margin-right: auto;">
+            <p class="section-subtitle">
                 Nuestro ecosistema de crowdfunding es la clave para un futuro financiero más justo y accesible. Miles de
                 personas ya están aprovechando esta oportunidad única, liderando el cambio financiero más importante del
                 momento. ¡Descubre cómo puedes ser parte de esta comunidad!
             </p>
 
-            <div style="display: flex; justify-content: center; margin-top: 20px;">
-                <iframe width="640" height="360" src="https://www.youtube.com/embed/Z4VEE9LTxCU?rel=0"
-                    title="Ecosystem Video" frameborder="0"
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/Z4VEE9LTxCU?rel=0" title="Ecosystem Video" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen
-                    style="max-width: 100%; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); border: 4px solid #fff;">
+                    allowfullscreen>
                 </iframe>
             </div>
         </div>
     </section>
 
     <!-- Own Your Time Section + Vimeo Video -->
-    <section class="section" style="background: linear-gradient(to top, #fff, #f8fafc);">
+    <section class="section section-gradient-bg-alt">
         <div class="container">
-            <h2 class="text-gradient" style="text-align: center; margin-bottom: 30px; font-size: 2rem;">
+            <h2 class="section-title text-gradient">
                 Empieza a ser dueño de tu tiempo
             </h2>
 
-            <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
-                <iframe src="https://player.vimeo.com/video/1150445989?title=0&byline=0&portrait=0" width="640"
-                    height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
-                    style="max-width: 100%; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); border: 4px solid #fff;">
-                </iframe>
+            <div class="video-center-group">
+                <div class="video-container">
+                    <iframe src="https://player.vimeo.com/video/1150445989?title=0&byline=0&portrait=0" frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
+                    </iframe>
+                </div>
 
-                <div style="max-width: 900px; text-align: center; margin-top: 30px;">
-                    <p style="font-size: 1.1rem; color: var(--text-color); line-height: 1.6; margin-bottom: 40px;">
+                <div class="section-content-narrow">
+                    <p>
                         Alguien que te valora ha pensado en ti y te ha compartido esta oportunidad única. ¡Contacta a
                         esa persona que te envió este enlace para que te guíe en el proceso de registro y te ayude a
                         unirte a Magic Lime! Estás en el lugar y el momento perfecto para comenzar tu transformación
                         financiera. ¡No estás solo, estamos aquí para apoyarte en cada paso!
                     </p>
 
-                    <h3 class="text-gradient"
-                        style="font-size: 1.5rem; margin-bottom: 30px; text-transform: uppercase;">
+                    <h3 class="cta-text text-gradient">
                         QUIERO ACTIVAR MI MEMBRESÍA Y GENERAR INGRESOS
                     </h3>
 
-                    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-                        <a href="#contact" class="btn btn-primary"
-                            style="font-size: 1.1rem; padding: 15px 30px; border-radius: 50px;">
-                            Información aquí <i class="fa-solid fa-arrow-down" style="margin-left: 8px;"></i>
+                    <div class="row-buttons-center">
+                        <a href="#contact" class="btn btn-primary btn-pill">
+                            Información aquí <i class="fa-solid fa-arrow-down"></i>
                         </a>
                         <a href="https://sso.magic-lime.site/registration/?partner=O8sTj8fSt99QiDepIvAim62AfNuJfVYG7DEdNx7y"
-                            target="_blank" class="btn btn-green-gradient"
-                            style="font-size: 1.1rem; padding: 15px 30px; border-radius: 50px; box-shadow: 0 5px 20px rgba(50, 205, 50, 0.4);">
-                            Regístrate aquí <i class="fa-solid fa-user-plus" style="margin-left: 8px;"></i>
+                            target="_blank" class="btn btn-green-gradient btn-pill">
+                            Regístrate aquí <i class="fa-solid fa-user-plus"></i>
                         </a>
                     </div>
                 </div>
@@ -359,7 +344,7 @@
     <!-- FAQ Section -->
     <section class="section" id="faq">
         <div class="container">
-            <h2 class="text-gradient" style="text-align: center; margin-bottom: 50px; font-size: 2rem;">
+            <h2 class="section-title text-gradient">
                 Preguntas Frecuentes
             </h2>
 
@@ -550,8 +535,7 @@
                     </div>
                     <div class="accordion-content">
                         <div class="accordion-content-inner">
-                            <div
-                                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 15px;">
+                            <div class="programs-inner-grid">
                                 <!-- 1. U-Lime -->
                                 <div
                                     style="background: #f8fafc; padding: 15px; border-radius: 12px; text-align: center;">
@@ -781,49 +765,32 @@
         </div>
     </section>
 
-    <!-- Contact Form -->
-    <section class="section" id="contact"
-        style="background: linear-gradient(to bottom, transparent, rgba(236, 252, 203, 0.3));">
+    <section class="section section-contact" id="contact">
         <div class="container">
-            <h2 class="text-gradient" style="text-align: center;">Información Aquí</h2>
-            <div class="glass" style="max-width: 600px; margin: 40px auto; padding: 40px; border-radius: 20px;">
-                <!-- Replicating fields from formulario_contactanos.jpeg (Name, Email, Phone, Message assumed based on typical forms since I can't see the image pixels, but user said 'tal como la imagen')
-                     Wait, I can see the image filename but not content. I'll include standard fields + "País" which is common in these international forms. 
-                     The user said "enviará un correo... a sheenglobalweb@gmail.com". I'll use mailto.
-                -->
+            <h2 class="section-title text-gradient">Información Aquí</h2>
+            <div class="glass contact-form-wrapper">
                 <form id="contact-form" action="https://aulaitpe.com/carrera/php/contacto_webCrowdfunding.php"
                     method="POST">
-                    <div style="margin-bottom: 20px;">
-                        <label style="display: block; margin-bottom: 8px; font-weight: 600;">Nombre</label>
-                        <input type="text" name="name" required
-                            oninvalid="this.setCustomValidity('Por favor, ingresa tu nombre completo')"
-                            oninput="this.setCustomValidity('')"
-                            style="width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px;">
+                    <div class="form-group">
+                        <label>Nombre</label>
+                        <input type="text" name="name" required placeholder="Tu nombre completo">
                     </div>
-                    <div style="margin-bottom: 20px;">
-                        <label style="display: block; margin-bottom: 8px; font-weight: 600;">Email</label>
-                        <input type="email" name="email" required
-                            oninvalid="this.setCustomValidity('Por favor, ingresa un correo electrónico válido')"
-                            oninput="this.setCustomValidity('')"
-                            style="width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px;">
+                    <div class="form-group">
+                        <label>Correo electrónico</label>
+                        <input type="email" name="email" required placeholder="tu@email.com">
                     </div>
-                    <div style="margin-bottom: 20px;">
-                        <label style="display: block; margin-bottom: 8px; font-weight: 600;">Celular</label>
-                        <input type="tel" name="celular" required
-                            oninvalid="this.setCustomValidity('Por favor, ingresa tu número de celular')"
-                            oninput="this.setCustomValidity('')"
-                            style="width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px;">
+                    <div class="form-group">
+                        <label>Celular</label>
+                        <input type="tel" name="celular" required placeholder="Ej: +51 987654321">
                     </div>
-                    <div style="margin-bottom: 20px;">
-                        <label style="display: block; margin-bottom: 8px; font-weight: 600;">Mensaje</label>
-                        <textarea name="message" rows="4" required
-                            oninvalid="this.setCustomValidity('Por favor, escribe tu mensaje aquí')"
-                            oninput="this.setCustomValidity('')"
-                            style="width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px; font-family: inherit;"></textarea>
+                    <div class="form-group">
+                        <label>Mensaje (Opcional)</label>
+                        <textarea name="message" rows="4" placeholder="¿En qué podemos ayudarte?"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary" style="width: 100%;">
-                        Enviar Datos <i class="fa-solid fa-paper-plane"></i>
+                    <button type="submit" class="btn btn-primary btn-full" id="submit-btn" style="width: 100%;">
+                        Enviar consulta ahora <i class="fa-solid fa-paper-plane" style="margin-left: 10px;"></i>
                     </button>
+                    <p id="form-feedback" style="margin-top: 15px; text-align: center; display: none;"></p>
                 </form>
             </div>
         </div>
@@ -832,12 +799,11 @@
     <!-- Footer -->
     <footer>
         <div class="container footer-content">
-            <div style="margin-bottom: 30px;">
-                <img src="./recursos/Logo - Majestic Lime.png" alt="Logo"
+            <div class="image-center-wrapper">
+                <img src="./recursos/Logo - Majestic Lime.png" alt="Logo" class="hero-logo"
                     style="height: 60px; filter: brightness(0) invert(1);">
             </div>
-            <div
-                style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 30px; width: 100%; max-width: 600px;">
+            <div class="row-buttons-center" style="margin-bottom: 30px;">
                 <a href="#contact" class="btn btn-primary">
                     Información aquí <i class="fa-solid fa-circle-info"></i>
                 </a>
@@ -877,8 +843,7 @@
             <div id="notification-icon" style="font-size: 5rem; margin-bottom: 20px;"></div>
             <h2 id="notification-title" style="margin-bottom: 15px; font-size: 1.8rem;"></h2>
             <p id="notification-message" style="margin-bottom: 30px; font-size: 1.1rem; color: var(--text-muted);"></p>
-            <button class="btn btn-primary" id="notification-close-btn"
-                style="width: 100%; padding: 15px;">Entendido</button>
+            <button class="btn btn-primary btn-full" id="notification-close-btn">Entendido</button>
         </div>
     </div>
 
