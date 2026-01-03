@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Majestic Lime International | Crowdfunding Ecosystem</title>
+    <link rel="stylesheet" href="style.css?v=1.2">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Canvas for AI Money Flow Animation (Background) -->
+    <canvas id="ai-canvas"></canvas>
+
+    <!-- Header Removed as requested -->
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <img src="./recursos/fondo_pagina1.jpg" alt="Fondo Abstracto">
+        </div>
+
+        <!-- Logo Text/Image Overlay -->
+        <div class="hero-logo-container">
+            <img src="./recursos/Logo - Majestic Lime.png" alt="Majestic Lime Logo" class="hero-logo">
+        </div>
+
+        <div class="container hero-content">
+            <!-- Tag Removed -->
+            <h1 class="hero-title">EMPRESA DE <br>CROWDFUNDING</h1>
+            <p class="hero-text">
+                ¿Por qué seguir invirtiendo solo y con miedo, cuando puedes crecer con apoyo y respaldo legal? En el
+                siguiente video descubre un crowdfunding legal que protege tu aporte inicial y te conecta con una
+                comunidad global. Mira el video y descubre beneficios especiales.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" id="start-video-sequence">
+                    <i class="fa-solid fa-play"></i> Click aquí para ver el video gratis
+                </button>
+            </div>
+
+            <p class="hero-text-bottom">
+                Bienvenido al futuro de las finanzas: un ecosistema descentralizado donde tú tienes el poder de generar
+                ingresos y construir tu libertad económica. Aquí, el tiempo, la tecnología y tu pensión están libres de
+                las restricciones de un país, un banco o un sistema tradicional. Descubre cómo el crowdfunding te brinda
+                una comunidad y la oportunidad de compartir los beneficios de la empresa cada día
+            </p>
+        </div>
+    </section>
+
+    <!-- Pain Points Section (Replaces Ecosystem) -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-gradient" style="text-align: center; margin-bottom: 50px; font-size: 2.5rem; color: #000;">
+                ¿Acaso te identificas con esto?
+            </h2>
+
+            <div class="pain-points-grid">
+                <!-- Card 1 -->
+                <div class="pain-card">
+                    <h3>Miedo a Perder tu Dinero</h3>
+                    <p>
+                        Te genera frustración invertir tus ahorros en esquemas poco claros, donde no tienes certeza de
+                        si recuperarás tu capital. Esta falta de transparencia te hace dudar y frena tus decisiones
+                        financieras.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="pain-card">
+                    <h3>Trabajas y no ves resultados</h3>
+                    <p>
+                        Sientes que, aunque te esfuerzas, los resultados no llegan como esperabas. Inviertes solo y
+                        sientes que el crecimiento es más lento, agotador y desmotivante.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="pain-card">
+                    <h3>Falta de oportunidades reales</h3>
+                    <p>
+                        Te preocupa no avanzar económicamente y terminar en proyectos fríos donde nadie se apoya. Buscas
+                        crecer en un entorno de confianza con colaboración real e interés en el crecimiento mutuo.
+                    </p>
+                </div>
+            </div>
+
+            <div class="pain-points-footer">
+                <p>
+                    Si te sientes identificado, no estás solo, tenemos una alternativa confiable con oportunidades
+                    reales para ti. Mira el siguiente video y descubre beneficios especiales.
+                </p>
+                <button class="btn btn-green-gradient" id="pain-points-video-btn">
+                    Click aquí para ver el video gratis <i class="fa-solid fa-play"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- User Personas Section (Replaces Crowdfunding Definition) -->
+    <section class="section" style="background: rgba(255,255,255,0.8);">
+        <div class="container">
+            <h2 class="text-gradient" style="text-align: center; margin-bottom: 50px; font-size: 2.5rem; color: #000;">
+                Justo para lo que necesitas
+            </h2>
+
+            <div class="personas-grid">
+                <!-- Card 1 -->
+                <div class="persona-card">
+                    <img src="./recursos/inversionista_prudente.png" alt="Inversionista Prudente"
+                        class="persona-icon-img">
+                    <h3>Inversionista prudente</h3>
+                    <p>
+                        Ideal para quienes priorizan la seguridad y la protección de su capital, buscando un crecimiento
+                        constante y bien estructurado.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="persona-card">
+                    <img src="./recursos/constructor_de_estabilidad.png" alt="Constructor de estabilidad"
+                        class="persona-icon-img">
+                    <h3>Constructor de estabilidad</h3>
+                    <p>
+                        Comienza con una inversión accesible y accede a un modelo con alto potencial de crecimiento a
+                        largo plazo, adaptado a tu ritmo.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="persona-card">
+                    <img src="./recursos/estratega_financiero.png" alt="Estratega financiero" class="persona-icon-img">
+                    <h3>Estratega financiero</h3>
+                    <p>
+                        Genera ingresos recurrentes y aprovecha un sistema que optimiza tu tiempo, permitiendo que tu
+                        dinero trabaje por ti.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="persona-card">
+                    <img src="./recursos/arquitecto_del_futuro.png" alt="Arquitecto del futuro"
+                        class="persona-icon-img">
+                    <h3>Arquitecto del futuro</h3>
+                    <p>
+                        Pensado para quienes buscan construir un futuro sólido y un legado duradero, a través de una
+                        estrategia financiera confiable y sostenible.
+                    </p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px;">
+                <button class="btn btn-green-gradient" id="personas-video-btn">
+                    Click aquí para ver el video gratis <i class="fa-solid fa-play"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Video Section (Replaces Page 5/Why Us) -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-gradient" style="text-align: center; margin-bottom: 20px; font-size: 2rem; color: #000;">
+                ¿Quieres transformar tu tiempo, conocimiento y tecnología en ingresos pasivos reales?
+            </h2>
+            <p
+                style="margin-bottom: 40px; font-size: 1.1rem; color: var(--text-muted); line-height: 1.6; text-align: center;">
+                En este vídeo te explicamos cómo. Descubre el nuevo paradigma de descentralización y conciencia
+                financiera que te guiará hacia tu pensión digital. ¡Empieza a construir tu futuro hoy mismo!
+            </p>
+
+            <div style="display: flex; justify-content: center; margin-top: 20px;">
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/gTdBEJxtRXQ?rel=0"
+                    title="Global Wallet Video" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                    style="max-width: 100%; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); border: 4px solid #fff;">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flagship Program Section (Replaces Programs Accordion) -->
+    <section class="section" id="programs">
+        <div class="container">
+            <h2 class="text-gradient"
+                style="text-align: center; margin-bottom: 30px; font-size: 1.8rem; text-transform: uppercase;">
+                Programa Bandera de la Empresa – 5 Programas en Uno
+            </h2>
+
+            <div style="display: flex; justify-content: center; margin-bottom: 30px;">
+                <img src="./recursos/imagen_ukaleidoscope.jpg" alt="Programa U-Kaleidoscopio"
+                    style="max-width: 100%; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+            </div>
+
+            <div
+                style="max-width: 900px; margin: 0 auto; text-align: center; font-size: 1.1rem; line-height: 1.6; color: var(--text-color);">
+                <p style="margin-bottom: 15px;">
+                    Si empiezas con este programa (membresía) obtendrás tu <strong>BioLink Personalizado</strong>.
+                </p>
+                <p>
+                    ¿Te gustaría tener un BioLink como esté, con tu nombre, tu imagen y tu enlace personal, para que
+                    puedas prospectar? <br>
+                    <strong>Costo anual: Simbólico</strong>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision & Mission Section + Video -->
+    <section class="section" style="background: linear-gradient(to bottom, #fff, #f8fafc);">
+        <div class="container">
+            <h2 class="text-gradient" style="text-align: center; margin-bottom: 40px; font-size: 2rem;">
+                Nuestra Visión y Misión
+            </h2>
+
+            <div class="vision-mission-grid"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-bottom: 50px;">
+                <!-- Vision -->
+                <div class="glass" style="padding: 30px; border-radius: 20px;">
+                    <h3 style="color: var(--primary-color); margin-bottom: 15px; font-size: 1.5rem;">
+                        <i class="fa-regular fa-eye"></i> Nuestra Visión
+                    </h3>
+                    <p style="color: var(--text-color); line-height: 1.7;">
+                        Nuestra Visión en Magic Lime es innovar en el mundo de las finanzas, creando un ecosistema de
+                        crowdfunding descentralizado basado en USDT que trasciende fronteras. Nos esforzamos por llevar
+                        la igualdad económica a todos los países y empoderar a las personas en cada rincón del planeta,
+                        construyendo un futuro financiero más justo para todos.
+                    </p>
+                </div>
+
+                <!-- Mission -->
+                <div class="glass" style="padding: 30px; border-radius: 20px;">
+                    <h3 style="color: var(--secondary-color); margin-bottom: 15px; font-size: 1.5rem;">
+                        <i class="fa-solid fa-rocket"></i> Nuestra Misión
+                    </h3>
+                    <p style="color: var(--text-color); line-height: 1.7;">
+                        Nuestra Misión es simplificar el crowdfunding global, aprovechando las criptomonedas para
+                        ofrecer soluciones financieras rápidas, económicas y accesibles para todos. Proporcionamos
+                        herramientas intuitivas para enviar, recibir y administrar fondos, fomentando la libertad
+                        financiera y la inclusión económica, sin importar la ubicación o situación económica.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Second Video Player (Same Style) -->
+            <div style="display: flex; justify-content: center; margin-top: 20px;">
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/bQyswHZwDb8?start=1277&rel=0"
+                    title="Vision and Mission Video" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                    style="max-width: 100%; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); border: 4px solid #fff;">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simple System Section + Vimeo Video -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-gradient" style="text-align: center; margin-bottom: 20px; font-size: 2rem;">
+                Sistema simple
+            </h2>
+            <p
+                style="margin-bottom: 40px; font-size: 1.1rem; color: var(--text-color); line-height: 1.6; text-align: center; max-width: 900px; margin-left: auto; margin-right: auto;">
+                Tenemos el sistema simple que te va a generar ingresos cada 24 horas. Imaginate que con registrar 2
+                personas puedes hacer tu comunidad y recibir cada 24 horas dinero directo a tu cuenta por sus
+                beneficios.
+            </p>
+
+            <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
+                <iframe src="https://player.vimeo.com/video/1150445921?title=0&byline=0&portrait=0" width="640"
+                    height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+                    style="max-width: 100%; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); border: 4px solid #fff;">
+                </iframe>
+
+                <div style="margin-top: 40px; text-align: center;">
+                    <h3 class="text-gradient"
+                        style="font-size: 1.4rem; margin-bottom: 20px; text-transform: uppercase; line-height: 1.4;">
+                        ¿Quieres registrarte? Pulsa en el botón y solicita información.
+                    </h3>
+                    <a href="#contact" class="btn btn-primary"
+                        style="font-size: 1.2rem; padding: 15px 40px; border-radius: 50px; box-shadow: 0 5px 20px rgba(50, 205, 50, 0.4);">
+                        Información aquí <i class="fa-solid fa-arrow-down" style="margin-left: 10px;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ecosystem Section + Video -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-gradient" style="text-align: center; margin-bottom: 20px; font-size: 2rem;">
+                Nuestro ecosistema
+            </h2>
+            <p
+                style="margin-bottom: 40px; font-size: 1.1rem; color: var(--text-color); line-height: 1.6; text-align: center; max-width: 900px; margin-left: auto; margin-right: auto;">
+                Nuestro ecosistema de crowdfunding es la clave para un futuro financiero más justo y accesible. Miles de
+                personas ya están aprovechando esta oportunidad única, liderando el cambio financiero más importante del
+                momento. ¡Descubre cómo puedes ser parte de esta comunidad!
+            </p>
+
+            <div style="display: flex; justify-content: center; margin-top: 20px;">
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/Z4VEE9LTxCU?rel=0"
+                    title="Ecosystem Video" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                    style="max-width: 100%; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); border: 4px solid #fff;">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Own Your Time Section + Vimeo Video -->
+    <section class="section" style="background: linear-gradient(to top, #fff, #f8fafc);">
+        <div class="container">
+            <h2 class="text-gradient" style="text-align: center; margin-bottom: 30px; font-size: 2rem;">
+                Empieza a ser dueño de tu tiempo
+            </h2>
+
+            <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
+                <iframe src="https://player.vimeo.com/video/1150445989?title=0&byline=0&portrait=0" width="640"
+                    height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+                    style="max-width: 100%; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); border: 4px solid #fff;">
+                </iframe>
+
+                <div style="max-width: 900px; text-align: center; margin-top: 30px;">
+                    <p style="font-size: 1.1rem; color: var(--text-color); line-height: 1.6; margin-bottom: 40px;">
+                        Alguien que te valora ha pensado en ti y te ha compartido esta oportunidad única. ¡Contacta a
+                        esa persona que te envió este enlace para que te guíe en el proceso de registro y te ayude a
+                        unirte a Magic Lime! Estás en el lugar y el momento perfecto para comenzar tu transformación
+                        financiera. ¡No estás solo, estamos aquí para apoyarte en cada paso!
+                    </p>
+
+                    <h3 class="text-gradient"
+                        style="font-size: 1.5rem; margin-bottom: 30px; text-transform: uppercase;">
+                        QUIERO ACTIVAR MI MEMBRESÍA Y GENERAR INGRESOS
+                    </h3>
+
+                    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                        <a href="#contact" class="btn btn-primary"
+                            style="font-size: 1.1rem; padding: 15px 30px; border-radius: 50px;">
+                            Información aquí <i class="fa-solid fa-arrow-down" style="margin-left: 8px;"></i>
+                        </a>
+                        <a href="https://sso.magic-lime.site/registration/?partner=O8sTj8fSt99QiDepIvAim62AfNuJfVYG7DEdNx7y"
+                            target="_blank" class="btn btn-green-gradient"
+                            style="font-size: 1.1rem; padding: 15px 30px; border-radius: 50px; box-shadow: 0 5px 20px rgba(50, 205, 50, 0.4);">
+                            Regístrate aquí <i class="fa-solid fa-user-plus" style="margin-left: 8px;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" id="faq">
+        <div class="container">
+            <h2 class="text-gradient" style="text-align: center; margin-bottom: 50px; font-size: 2rem;">
+                Preguntas Frecuentes
+            </h2>
+
+            <div class="accordion">
+                <!-- Q1 -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>1. ¿Quiénes somos?</span>
+                        <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <p>Somos una compañía que nació en Rusia en el año 2019, desarrollamos programas de
+                                crowdfunding, se ha expandido por Europa, inició en Latinoamérica en 2024.</p>
+                            <p style="margin-top: 10px;"><a
+                                    href="https://youtube.com/shorts/gzm_PUGYEsw?si=mRn3TEpLcNARhkF2" target="_blank"
+                                    style="color: var(--secondary-color); font-weight: 600;">Conócenos en YouTube <i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q2 -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>2. ¿Está registrado la empresa?</span>
+                        <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <p>Sí. Revisa nuestro registro aquí:</p>
+                            <p style="margin-top: 10px;"><a
+                                    href="https://drive.google.com/file/d/1F1Qay64QyhlXa8lk9bacnNTzSNdowXAn/view"
+                                    target="_blank" style="color: var(--secondary-color); font-weight: 600;">Ver
+                                    Registro Legal <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q3 -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>3. ¿Qué es crowdfunding?</span>
+                        <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <p>El crowdfunding, o financiamiento colectivo, es una forma de obtener dinero en línea
+                                directamente de muchas personas. En lugar de pedir préstamos a bancos o inversores,
+                                emprendedores y organizaciones usan plataformas en línea para conectar con gente
+                                dispuesta a participar con pequeñas cantidades. Este método facilita el acceso al
+                                capital y valida el mercado para los proyectos. Además de proporcionar fondos, ayuda a
+                                construir una comunidad, la empresa Magic Lime tiene 11 años en el mercado y cuenta con
+                                13 programas, un programa de casa, de auto todo esto con una sola inversión.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q4 -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>4. ¿Cuáles son los beneficios de Lime Company y su comercialización?</span>
+                        <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <ul style="padding-left: 20px;">
+                                <li>La empresa es legal.</li>
+                                <li>Licencia de explotación de la empresa hasta 2031. Prolongación adicional del
+                                    contrato.</li>
+                                <li>La entrada en la empresa es mínima.</li>
+                                <li>Entrada en la empresa una sola vez. Aquí funciona un sistema de club, al entrar en
+                                    la empresa una vez pagas la cuota de entrada y utilizas los recursos de la empresa:
+                                    intercambio P2P, aprender a ganar, etc.</li>
+                                <li>Rápida devolución de los fondos aportados.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q5 -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>5. ¿Alguna vez te has preguntado si estás atado a tu tiempo, a los bancos y a las posibles
+                            pérdidas?</span>
+                        <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <ul style="padding-left: 20px;">
+                                <li>Trabaja a corto apalancamiento.</li>
+                                <li>98% de todo el dinero se destina a pagos.</li>
+                                <li>Es un sistema de redistribución de fondos.</li>
+                                <li>No hay atesoramiento, ni arcas... el dinero se redistribuye y va directamente a las
+                                    prestaciones.</li>
+                                <li>No hay ataduras a bancos o divisas.</li>
+                                <li>Hay un algoritmo matemático en la comercialización.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q6 -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>6. ¿Cómo es la forma de ganar?</span>
+                        <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <ul style="padding-left: 20px;">
+                                <li>En cada nivel ganamos.</li>
+                                <li>Cuando superas a un mentor superior, no pierdes tu vinculación de patrocinio.</li>
+                                <li>Tú ganas cuando tu compañero gana.</li>
+                                <li>Haz que tu socio tenga éxito y tú mismo te volverás súper exitoso.</li>
+                                <li>En marketing, un tercio del dinero de cada nivel siempre vuela hacia abajo para
+                                    ayudar a los afiliados y escalar tu negocio.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q7 -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>7. ¿Cómo manejo mi tiempo en el negocio de crowdfunding?</span>
+                        <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <ul style="padding-left: 20px;">
+                                <li>No hay límite de tiempo.</li>
+                                <li>Trabajas en el proyecto, según te convenga y sea rentable.</li>
+                                <li>Retiro de ganancias a diario.</li>
+                                <li>El sistema es transparente. Cualquier acción se muestra en los despachos. Cualquier
+                                    movimiento de dinero.</li>
+                                <li>Te encuentras en un equipo donde todos se interesan por tu progreso y éxito.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q8 -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>8. ¿Cuánto tengo que aportar?</span>
+                        <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <p>Una sola aportación para toda la vida, la aportación depende de la membresía que eliges.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q9 -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>9. ¿En cuántos países está presente?</span>
+                        <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <p>Hasta el momento estamos en 85 países y queremos llegar a más países.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q10 -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>10. ¿Cuántos programas tiene la empresa?</span>
+                        <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <p>Hasta el momento contamos con 14 programas.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q11 Programas -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>11. ¿Cuáles son los programas?</span>
+                        <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <div
+                                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 15px;">
+                                <!-- 1. U-Lime -->
+                                <div
+                                    style="background: #f8fafc; padding: 15px; border-radius: 12px; text-align: center;">
+                                    <h4 style="color: var(--primary-color);">1. U-lime</h4>
+                                    <img src="./recursos/imagen_U-lime.jpg" alt="U-Lime"
+                                        style="width: 100%; border-radius: 8px; margin: 10px 0;">
+                                    <p style="font-size: 0.9rem; margin-bottom: 10px;">
+                                        Tiene 11 niveles. En cada nivel tienes recompensas, al llegar a este nivel
+                                        tendrás $ 27.000, este es el programa más pequeño que tenemos con una membresía
+                                        de $ 15 ,la empresa te da 144 CLONES,tendrás una ganancia por cada directo que
+                                        llegue al nivel 11 Ganancia total por directo $ 1.348 USDT.
+                                    </p>
+                                    <a href="https://drive.google.com/file/d/1kFmVQnhs4GYioT6n_pDzPrh9r830SN2u/view?usp=sharing"
+                                        target="_blank"
+                                        style="color: var(--secondary-color); font-weight: 600; font-size: 0.9rem;">
+                                        Conoce Más <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </a>
+                                </div>
+                                <!-- 2. U-Bitlime -->
+                                <div
+                                    style="background: #f8fafc; padding: 15px; border-radius: 12px; text-align: center;">
+                                    <h4 style="color: var(--primary-color);">2. U-bitlime</h4>
+                                    <img src="./recursos/imagen_U-bitlime.jpg" alt="U-Bitlime"
+                                        style="width: 100%; border-radius: 8px; margin: 10px 0;">
+                                    <p style="font-size: 0.9rem; margin-bottom: 10px;">
+                                        Tiene 17 niveles. En cada nivel tienes recompensas,al llegar a este nivel
+                                        tendrás $ 1.302.894, este programa con una membresía de USDT 28, la empresa te
+                                        da 448 CLONES.
+                                    </p>
+                                    <a href="https://www.youtube.com/watch?v=lj8etqLaH6k" target="_blank"
+                                        style="color: var(--secondary-color); font-weight: 600; font-size: 0.9rem;">
+                                        Conoce Más <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </a>
+                                </div>
+                                <!-- 3. U-Auto -->
+                                <div
+                                    style="background: #f8fafc; padding: 15px; border-radius: 12px; text-align: center;">
+                                    <h4 style="color: var(--primary-color);">3. U-auto</h4>
+                                    <img src="./recursos/imagen_U-auto.jpg" alt="U-Auto"
+                                        style="width: 100%; border-radius: 8px; margin: 10px 0;">
+                                    <p style="font-size: 0.9rem; margin-bottom: 10px;">
+                                        Tiene 6 niveles. En cada nivel tienes recompensas, al llegar a este nivel
+                                        tendrás $ 91.000, este programa con una membresía de $ 400, la empresa te da 22
+                                        CLONES,Tu Sponsor tendrá una ganancia de $ 15.000 USDT.
+                                    </p>
+                                    <a href="https://drive.google.com/file/d/1kFmVQnhs4GYioT6n_pDzPrh9r830SN2u/view?usp=sharing"
+                                        target="_blank"
+                                        style="color: var(--secondary-color); font-weight: 600; font-size: 0.9rem;">
+                                        Conoce Más <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </a>
+                                </div>
+                                <!-- 4. U-House -->
+                                <div
+                                    style="background: #f8fafc; padding: 15px; border-radius: 12px; text-align: center;">
+                                    <h4 style="color: var(--primary-color);">4. U-house</h4>
+                                    <img src="./recursos/imagen_U-house.jpg" alt="U-House"
+                                        style="width: 100%; border-radius: 8px; margin: 10px 0;">
+                                    <p style="font-size: 0.9rem; margin-bottom: 10px;">
+                                        Tiene 6 niveles. En cada nivel tienes recompensas, al llegar a este nivel
+                                        tendrás $ 250.000, este programa con una membresía de $ 525, la empresa te da 59
+                                        CLONES,Tu Sponsor tendrá una ganancia de $ 72.500 USDT.
+                                    </p>
+                                    <a href="https://drive.google.com/file/d/1kFmVQnhs4GYioT6n_pDzPrh9r830SN2u/view?usp=sharing"
+                                        target="_blank"
+                                        style="color: var(--secondary-color); font-weight: 600; font-size: 0.9rem;">
+                                        Conoce Más <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </a>
+                                </div>
+                                <!-- 5. Ukaleidoscope -->
+                                <div
+                                    style="background: #f8fafc; padding: 15px; border-radius: 12px; text-align: center;">
+                                    <h4 style="color: var(--primary-color);">5. Ukaleidoscope</h4>
+                                    <img src="./recursos/imagen_ukaleidoscope.jpg" alt="Ukaleidoscope"
+                                        style="width: 100%; border-radius: 8px; margin: 10px 0;">
+                                    <p style="font-size: 0.9rem; margin-bottom: 10px;">
+                                        <strong>TIENE 5 PROGRAMAS EN UNO</strong><br>
+                                        Tiene 7 niveles. En cada nivel tienes recompensas,al llegar a este nivel tendrás
+                                        $ 31.125, este programa con una membresía de USDT 197, la empresa te da 71
+                                        CLONES,Tu Sponsor tendrá una ganancia de $ 17.409 USDT.
+                                    </p>
+                                    <a href="https://drive.google.com/file/d/1XRvM0ZBYPS9cQz1NfZvYnfzytdR98qZF/view?usp=sharing"
+                                        target="_blank"
+                                        style="color: var(--secondary-color); font-weight: 600; font-size: 0.9rem;">
+                                        Conoce Más <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </a>
+                                </div>
+                                <!-- 6. Lime -->
+                                <div
+                                    style="background: #f8fafc; padding: 15px; border-radius: 12px; text-align: center;">
+                                    <h4 style="color: var(--primary-color);">6. Lime</h4>
+                                    <img src="./recursos/imagen_Lime.jpg" alt="Lime"
+                                        style="width: 100%; border-radius: 8px; margin: 10px 0;">
+                                    <p style="font-size: 0.9rem;">
+                                        Tiene 11 niveles. En cada nivel tienes recompensas,,al llegar a este nivel
+                                        tendrás $ 108.016, este programa con una membresía de USDT 40, la empresa te da
+                                        160 CLONES,Tu Sponsor tendrá una ganancia de $ 5.392 USDT.
+                                    </p>
+                                </div>
+                                <!-- 7. Bitlime -->
+                                <div
+                                    style="background: #f8fafc; padding: 15px; border-radius: 12px; text-align: center;">
+                                    <h4 style="color: var(--primary-color);">7. Bitlime</h4>
+                                    <p style="font-size: 0.9rem;">
+                                        Tiene 11 niveles. En cada nivel tienes recompensas,al llegar a este nivel
+                                        tendrás 3,347.118.50 BL = 33.5 BTC este programa con una membresía de USDT 40,
+                                        la empresa te da 160 CLONES,Tu Sponsor tendrá una ganancia de $ 5.392 USDT.
+                                    </p>
+                                </div>
+                                <!-- 8. MagicDrive -->
+                                <div
+                                    style="background: #f8fafc; padding: 15px; border-radius: 12px; text-align: center;">
+                                    <h4 style="color: var(--primary-color);">8. MagicDrive</h4>
+                                    <p style="font-size: 0.9rem;">Próximamente...</p>
+                                </div>
+                                <!-- 9. AutoStandard -->
+                                <div
+                                    style="background: #f8fafc; padding: 15px; border-radius: 12px; text-align: center;">
+                                    <h4 style="color: var(--primary-color);">9. AutoStandard</h4>
+                                    <p style="font-size: 0.9rem;">
+                                        Tiene 5 niveles. En cada nivel tienes recompensas,este programa empieza desde el
+                                        nivel 0.
+                                    </p>
+                                </div>
+                                <!-- 10. AutoBusiness -->
+                                <div
+                                    style="background: #f8fafc; padding: 15px; border-radius: 12px; text-align: center;">
+                                    <h4 style="color: var(--primary-color);">10. AutoBusiness</h4>
+                                    <p style="font-size: 0.9rem;">
+                                        Tiene 5 niveles. En cada nivel tienes recompensas,este programa empieza desde el
+                                        nivel 0.
+                                    </p>
+                                </div>
+                                <!-- 11. AutoPremium -->
+                                <div
+                                    style="background: #f8fafc; padding: 15px; border-radius: 12px; text-align: center;">
+                                    <h4 style="color: var(--primary-color);">11. AutoPremium</h4>
+                                    <p style="font-size: 0.9rem;">
+                                        Tiene 5 niveles. En cada nivel tienes recompensas,este programa empieza desde el
+                                        nivel 0.
+                                    </p>
+                                </div>
+                                <!-- 12. Lime10 -->
+                                <div
+                                    style="background: #f8fafc; padding: 15px; border-radius: 12px; text-align: center;">
+                                    <h4 style="color: var(--primary-color);">12. Lime10</h4>
+                                    <p style="font-size: 0.9rem;">
+                                        Tiene 6 niveles. En cada nivel tienes recompensas,este programa empieza desde el
+                                        nivel 0.
+                                    </p>
+                                </div>
+                                <!-- 13. Kaleidoscope -->
+                                <div
+                                    style="background: #f8fafc; padding: 15px; border-radius: 12px; text-align: center;">
+                                    <h4 style="color: var(--primary-color);">13. Kaleidoscope</h4>
+                                    <p style="font-size: 0.9rem;">
+                                        Tiene 6 niveles. En cada nivel tienes recompensas.
+                                    </p>
+                                </div>
+                                <!-- 14. Travel -->
+                                <div
+                                    style="background: #f8fafc; padding: 15px; border-radius: 12px; text-align: center;">
+                                    <h4 style="color: var(--primary-color);">14. Travel</h4>
+                                    <p style="font-size: 0.9rem;">
+                                        Tiene 5 niveles. En cada nivel tienes recompensas.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q12 Por qué unirme -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>12. ¿Por qué unirme?</span>
+                        <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <ul style="padding-left: 20px;">
+                                <li>Costo bajo de entrada desde 15 USDT.</li>
+                                <li>Modelo transparente basado en comunidad.</li>
+                                <li>Ganas ayudando a otros.</li>
+                                <li>Sistema sostenible de apoyo mutuo.</li>
+                                <li>Sistema patentado de clones.</li>
+                                <li>Seguridad y Confianza.</li>
+                                <li>Sistema basado en blockchain.</li>
+                                <li>Smart contrato validados.</li>
+                                <li>Sin intermediarios financieros.</li>
+                                <li>Ganancias perpetuas y heredables.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q13 Cómo me registro -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>13. ¿Cómo me registro?</span>
+                        <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <p style="margin-bottom: 20px;">
+                                Tienes que solicitar a tu sponsor su link de registro. Antes de registrarte mira el
+                                siguiente video:
+                            </p>
+                            <div style="display: flex; justify-content: center; margin-bottom: 20px;">
+                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/6OBvooxq6OY?rel=0"
+                                    title="Registration Guide" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen
+                                    style="max-width: 560px; border-radius: 12px; border: 1px solid #e2e8f0;">
+                                </iframe>
+                            </div>
+                            <div style="text-align: center;">
+                                <a href="https://sso.magic-lime.site/registration/?partner=O8sTj8fSt99QiDepIvAim62AfNuJfVYG7DEdNx7y"
+                                    target="_blank" class="btn btn-green-gradient"
+                                    style="font-size: 1.1rem; padding: 15px 40px; border-radius: 50px; box-shadow: 0 5px 20px rgba(50, 205, 50, 0.4);">
+                                    Regístrate aquí <i class="fa-solid fa-user-plus" style="margin-left: 10px;"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="section" id="contact"
+        style="background: linear-gradient(to bottom, transparent, rgba(236, 252, 203, 0.3));">
+        <div class="container">
+            <h2 class="text-gradient" style="text-align: center;">Información Aquí</h2>
+            <div class="glass" style="max-width: 600px; margin: 40px auto; padding: 40px; border-radius: 20px;">
+                <!-- Replicating fields from formulario_contactanos.jpeg (Name, Email, Phone, Message assumed based on typical forms since I can't see the image pixels, but user said 'tal como la imagen')
+                     Wait, I can see the image filename but not content. I'll include standard fields + "País" which is common in these international forms. 
+                     The user said "enviará un correo... a sheenglobalweb@gmail.com". I'll use mailto.
+                -->
+                <form id="contact-form" action="https://aulaitpe.com/carrera/php/contacto_webCrowdfunding.php"
+                    method="POST">
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 8px; font-weight: 600;">Nombre</label>
+                        <input type="text" name="name" required
+                            oninvalid="this.setCustomValidity('Por favor, ingresa tu nombre completo')"
+                            oninput="this.setCustomValidity('')"
+                            style="width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px;">
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 8px; font-weight: 600;">Email</label>
+                        <input type="email" name="email" required
+                            oninvalid="this.setCustomValidity('Por favor, ingresa un correo electrónico válido')"
+                            oninput="this.setCustomValidity('')"
+                            style="width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px;">
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 8px; font-weight: 600;">Celular</label>
+                        <input type="tel" name="celular" required
+                            oninvalid="this.setCustomValidity('Por favor, ingresa tu número de celular')"
+                            oninput="this.setCustomValidity('')"
+                            style="width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px;">
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 8px; font-weight: 600;">Mensaje</label>
+                        <textarea name="message" rows="4" required
+                            oninvalid="this.setCustomValidity('Por favor, escribe tu mensaje aquí')"
+                            oninput="this.setCustomValidity('')"
+                            style="width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px; font-family: inherit;"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">
+                        Enviar Datos <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div style="margin-bottom: 30px;">
+                <img src="./recursos/Logo - Majestic Lime.png" alt="Logo"
+                    style="height: 60px; filter: brightness(0) invert(1);">
+            </div>
+            <div
+                style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 30px; width: 100%; max-width: 600px;">
+                <a href="#contact" class="btn btn-primary">
+                    Información aquí <i class="fa-solid fa-circle-info"></i>
+                </a>
+                <a href="https://sso.magic-lime.site/registration/?partner=O8sTj8fSt99QiDepIvAim62AfNuJfVYG7DEdNx7y"
+                    target="_blank" class="btn btn-green-gradient">
+                    Regístrate aquí <i class="fa-solid fa-user-plus"></i>
+                </a>
+            </div>
+            <p>&copy; 2026 Majestic Lime International. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Video Modal Overlay -->
+    <div class="modal-overlay" id="video-modal">
+        <div class="modal-content">
+            <div class="video-wrapper">
+                <iframe id="video-frame" src="" title="Video Player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+            <div class="modal-controls">
+                <span id="modal-status-text">Video 1 de 3</span>
+                <button class="btn btn-primary" id="modal-action-btn">Siguiente Video <i
+                        class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <button class="close-modal" id="close-modal-btn"
+                style="position: absolute; top: 10px; right: 10px; z-index: 10;">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Notification Modal -->
+    <div class="modal-overlay" id="notification-modal">
+        <div class="modal-content glass"
+            style="max-width: 450px; text-align: center; padding: 40px; background: white; color: var(--text-main);">
+            <div id="notification-icon" style="font-size: 5rem; margin-bottom: 20px;"></div>
+            <h2 id="notification-title" style="margin-bottom: 15px; font-size: 1.8rem;"></h2>
+            <p id="notification-message" style="margin-bottom: 30px; font-size: 1.1rem; color: var(--text-muted);"></p>
+            <button class="btn btn-primary" id="notification-close-btn"
+                style="width: 100%; padding: 15px;">Entendido</button>
+        </div>
+    </div>
+
+    <!-- Sticky WhatsApp -->
+    <div class="floating-whatsapp contact-trigger">
+        <img src="./recursos/whatsapp_pro_icon.png" alt="WhatsApp" class="whatsapp-icon-img">
+    </div>
+
+    <script src="script.js?v=1.2"></script>
+</body>
+
+</html>
