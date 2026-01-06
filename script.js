@@ -9,7 +9,36 @@ document.addEventListener('DOMContentLoaded', () => {
     initVideoSequence();
     initAccordion();
     initContactForm(); // Handle AJAX form submission
+    initVideoLazyLoading();
 });
+
+/* =========================================
+   0. Video Lazy Loading & Performance
+   ========================================= */
+function initVideoLazyLoading() {
+    const video = document.getElementById('bg-video-lazy');
+    const wrapper = document.querySelector('.video-bg-wrapper');
+
+    if (!video || !wrapper) return;
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Play when in view
+                if (video.paused) {
+                    video.play().catch(err => console.log("Auto-play prevented:", err));
+                }
+            } else {
+                // Pause when out of view to save resources
+                if (!video.paused) {
+                    video.pause();
+                }
+            }
+        });
+    }, { threshold: 0.1 }); // Starts when 10% of the section is visible
+
+    observer.observe(wrapper); // Observe the wrapper, not the video
+}
 
 /* =========================================
    1. AI Money Flow Animation (Canvas)
