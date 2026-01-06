@@ -16,12 +16,32 @@ document.addEventListener('DOMContentLoaded', () => {
    0. Video Lazy Loading & Performance
    ========================================= */
 function initVideoLazyLoading() {
+    const videoDesktop = document.getElementById('bg-video-desktop');
     const videoPain = document.getElementById('bg-video-pain');
     const videoPersonas = document.getElementById('bg-video-personas');
+    const wrapper = document.querySelector('.video-sections-wrapper');
     const sectionPain = document.querySelector('.section-pain-points');
     const sectionPersonas = document.querySelector('.section-personas');
 
-    // Observer for Pain Points section
+    // Desktop: Observer for wrapper (single video for both sections)
+    if (videoDesktop && wrapper) {
+        const observerDesktop = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    if (videoDesktop.paused) {
+                        videoDesktop.play().catch(err => console.log("Desktop video play prevented:", err));
+                    }
+                } else {
+                    if (!videoDesktop.paused) {
+                        videoDesktop.pause();
+                    }
+                }
+            });
+        }, { threshold: 0.1 });
+        observerDesktop.observe(wrapper);
+    }
+
+    // Mobile: Observer for Pain Points section
     if (videoPain && sectionPain) {
         const observerPain = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -39,7 +59,7 @@ function initVideoLazyLoading() {
         observerPain.observe(sectionPain);
     }
 
-    // Observer for Personas section
+    // Mobile: Observer for Personas section
     if (videoPersonas && sectionPersonas) {
         const observerPersonas = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
