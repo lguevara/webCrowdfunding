@@ -338,7 +338,9 @@ h4 {
 
     .section-pain-points .video-bg-container,
     .section-personas .video-bg-container {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
         position: absolute;
         top: 0;
         left: 0;
@@ -350,8 +352,9 @@ h4 {
     }
 
     .video-bg-mobile {
+        width: 100% !important;
+        height: auto !important;
         object-fit: contain;
-        object-position: top center;
         filter: brightness(0.6);
     }
 
