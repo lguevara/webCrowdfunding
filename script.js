@@ -16,28 +16,46 @@ document.addEventListener('DOMContentLoaded', () => {
    0. Video Lazy Loading & Performance
    ========================================= */
 function initVideoLazyLoading() {
-    const video = document.getElementById('bg-video-lazy');
-    const wrapper = document.querySelector('.video-bg-wrapper');
+    const videoPain = document.getElementById('bg-video-pain');
+    const videoPersonas = document.getElementById('bg-video-personas');
+    const sectionPain = document.querySelector('.section-pain-points');
+    const sectionPersonas = document.querySelector('.section-personas');
 
-    if (!video || !wrapper) return;
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                // Play when in view
-                if (video.paused) {
-                    video.play().catch(err => console.log("Auto-play prevented:", err));
+    // Observer for Pain Points section
+    if (videoPain && sectionPain) {
+        const observerPain = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    if (videoPain.paused) {
+                        videoPain.play().catch(err => console.log("Pain video play prevented:", err));
+                    }
+                } else {
+                    if (!videoPain.paused) {
+                        videoPain.pause();
+                    }
                 }
-            } else {
-                // Pause when out of view to save resources
-                if (!video.paused) {
-                    video.pause();
-                }
-            }
-        });
-    }, { threshold: 0.1 }); // Starts when 10% of the section is visible
+            });
+        }, { threshold: 0.1 });
+        observerPain.observe(sectionPain);
+    }
 
-    observer.observe(wrapper); // Observe the wrapper, not the video
+    // Observer for Personas section
+    if (videoPersonas && sectionPersonas) {
+        const observerPersonas = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    if (videoPersonas.paused) {
+                        videoPersonas.play().catch(err => console.log("Personas video play prevented:", err));
+                    }
+                } else {
+                    if (!videoPersonas.paused) {
+                        videoPersonas.pause();
+                    }
+                }
+            });
+        }, { threshold: 0.1 });
+        observerPersonas.observe(sectionPersonas);
+    }
 }
 
 /* =========================================
